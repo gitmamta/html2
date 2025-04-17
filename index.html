@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="typeffect.js" defer></script>
+        
         
 </head>
 
@@ -18,16 +22,17 @@
     <script>
         AOS.init();
       </script>
-    
-
+<div id="home">
     <div id="header">
         <div class="container">
            
             <nav class="nav">
-                <h1 class="logo" >Mamta</h1>
+                <div>
+                    <h1 class="logo">Mamta</h1>
+                </div>
 
                 <ul id="sidemenu">
-                    <li><a href="#Home" id="Home">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
@@ -36,83 +41,98 @@
                     <i class="fas fa-times" onclick="closemenu()"></i>
 
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()" ></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             
             <div class="header-container">
-                <div data-aos="flip-left">
+                <!-- <div data-aos="flip-left"> -->
                     <div class="row2">
                         <div class="column2">
                 
-                <p>Front End Designer</p>
-            
-                <h2>Hii ,<span> I am Mamta</span><br> Rana from India</I></h2>
+                <p class="typing"></p>
+                            
+                        <h2>Hii ,<span> I am Mamta</span><br> Rana from India</h2>
             </div>
-        
+       
             <div class="column3">
-                
                 <div data-aos="flip-right" data-aos-duration="3000">
-                <img src="mjj.avif" alt="">
-            </div>
+                            <img src=".//images/mamtaimg.png" alt="" class="mypic">
         </div>
         </div>
         </div>
+                <!-- </div> -->
     </div>
             <!-- </div> -->
     </div>
     </div>
-
+</div>
     <!-- .............About page............ -->
     <div id="about">
         <div class="container">
+            <section class="section">
+                <div>
+                    <h1 class="heading">About Me</h1>
+                </div>
             <div class="row">
-                
-                <div class="column-1">
-                   
-
                     <div data-aos="fade-up" data-aos-duration="3000">
-                    <img src=".//mm.jpg" alt="">
+                    <div class="column-1">
+                        
+                    <img src=".//images/mm.jpg" alt="">
                     </div>
                 
                 </div>
                 <div class="column-2">
                     
 
-                    <h1 class="heading">About Me</h1>
+                        <!-- <h1 class="heading">About Me</h1> -->
                 
-                    <p class="para">I am Mamta-frontend developer with passion for user friendly and responsive websites.This portfolio website,which I designed and developed myself using HTML,CSS,Javascript,showcases my skills and projects.</p>
+                        <p class="about-para">I am Mamta-frontend developer with passion for user friendly and responsive
+                            websites.This portfolio website,which I designed and developed myself using
+                            HTML,CSS,Javascript,showcases my skills and projects. I thrive on solving problems, creating
+                            seamless experiences, and continuously expanding my skills. Always eager to learn and grow,
+                            I'm currently looking for new opportunities to contribute and innovate.</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 <!-- .......Skills...... -->
  <div id="skills">
     <div data-aos="flip-left">
     <div class="container">
-        <h3 class="skillhead">Skills</h3>
+                <section class="section">
+                    <div>
+                    <h3 class="skill-head">Skills</h3>
+                </div>
+
         <div class="skills-sections">
             <div class="cell1">
                 
-            <img src="icons8-html-48.png" alt="">
+            <img src=".//images/icons8-html-48.png" alt="">
             <span>HTML</span>
 
         </div>
         <div class="cell1">
-            <img src="icons8-css-48.png" alt="">
+            <img src=".//images/icons8-css-48.png" alt="">
             <span>CSS</span>
         </div>
         <div class="cell1">
-            <img src="icons8-javascript-48.png" alt="">
+            <img src=".//images/icons8-javascript-48.png" alt="">
             <span>Javascript</span>
         </div>
         <div class="cell1">
-            <img src="icons8-python-48.png" alt="">
+            <img src=".//images/icons8-python-48.png" alt="">
             <span>Python</span>
         </div>
         <div class="cell1">
-            <img src="icons8-mongodb-24.png" alt="">
+            <img src=".//images/icons8-mongodb-24.png" alt="">
             <span>Mongodb</span>
         </div>
+                        <div class="cell1">
+                            <img src=".//images/icons8-react-js-100.png" alt="">
+                            <span>ReactJS</span>
+                        </div>
+                </section>
     </div>
  </div>
 </div>
@@ -123,94 +143,161 @@
 
     <!-- ..................Services............  -->
     <div id="services">
+        <div data-aos="fade-down">
+            <div class="fullBorderAnimation">
         <div class="container">
-            <h1 class="heading1">Services</h1>
            
-            <div class="services-list">
+            <section class="section">
                 <div>
+                <h1 class="heading1">Services</h1>
+            </div>
+
+                <div class="services-list">
                     
-                    <h4>UI/UX Design</h4>
+                    <div class="services-list-1">
+                        <div>
+                            <img width="64" height="64" src="https://img.icons8.com/wired/64/bug.png" alt="bug"/>
+                            <!-- <img src=".//" alt=""> -->
+                        </div>
 
+                        <h4>Debugging</h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas nec nulla cursus
-                        tempus. Donec in ornare libero,</p>
-                    <a href="#">learn more</a>
+                        <!-- <div class="para1"> -->
+                            <p class="para1">If you need a quick,efficient and secure data migration service with no distruption to
+                                your
+                                business,our experts can help.Debugging application functionality across various
+                                software
+                                platforms.Identify and resolve potential bug issues</p>
+                        <!-- </div> -->
+
                 </div>
 
 
 
+
+                       
+                       
+                            <div class="services-list-1">
+                                <div>
+                                    <img width="64" height="64" src="https://img.icons8.com/wired/64/web-design.png" alt="web-design"/>
+                                <!-- <img src=".//full stack icon.png" alt=""> -->
+                            </div>
+
+                            <h4>Full Stack Development</h4>
+                            <!-- <div class="para1"> -->
+
+                                <p class="para1">Beautiful and elegant designs with interfaces that are intutive,efficient and
+                                    pleasent to use for the user.Cutom web development tailored to your
+                                    specifications,designed to provide a flawless user experience.</p>
+
+                            <!-- </div> -->
+
+                        <!-- </div> -->
+
+                </div>
+
+                    
+
+                        <div class="services-list-1">
                 <div>
-
-
-                    <!-- <img src=".//appimg.jpg" alt="" height="100" width="100"><br> -->
-                    <div data-aos="fade-down">
-                    <h4>App Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas nec nulla cursus
-                        tempus. Donec in ornare libero,</p>
-                    <a href="#">learn more</a>
-
-                </div>
-                </div>
-                <div>
-
-
-                    <h4>Responsive Design</h4>
-
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas nec nulla cursus
-                        tempus. Donec in ornare libero,</p>
-                    <a href="#">learn more</a>
+                    <img width="64" height="64" src="https://img.icons8.com/wired/64/accept-database.png" alt="accept-database"/>
+                            <!-- <img src=".//database icon.png" alt=""> -->
                 </div>
             
+                        <h4>Database Integration</h4>
+                        <!-- <div class="para1"> -->
+
+                            <p class="para1">Internally,integrating data from different business systems, like sales, supply chain,
+                                production, and finance, lets decision-makers craft more accurate budgets. Connecting
+                                CRM software with an accounting system ensures consistent and up-to-date customer
+                                information.</p>
+
+                        <!-- </div> -->
+                        </div>
+                    </div>
+            </section>
         </div>
     </div>
+    </div>
+    </div>
+    
         <!-- .................portfolio.................... -->
         <div id="portfolio">
             <div class="container">
+            <section class="section">
                 <div data-aos="flip-down">
+                    <div>
                 <h1>Portfolio</h1>
+                </div>
                 <div class="portfolio-pages">
                     <div class="portfolio-page1">
-                        <img src="img3.jpg" alt="">
-                        <div class="layer">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="card">
+                            <img src=".//images/youtubee.png" alt="" class="portfolio-img-top">
+                        </div>
+                            <!-- <div class="layer">
+                                <p>I created a Youtube clone using React JS and material UI.Used Rapid API to fetch data
+                                    and learnt how to fetch data using API.The API usedhere was YouTube v3. </p>
 
+                            </div> -->
+                        </div>
+                        <div class="portfolio-page1">
+                            <div class="card">
+                            <img src=".//images/rest.jpg" alt="">
+                        </div>
+                            <!-- <div class="layer">
+                                <p>This is my personal portfolio website.I have made this with the help of html,css and
+                                    Javascript.You can see my projects,skills, and contact me over here as well.</p>
+
+                            </div> -->
+                    </div>
+                    <div class="portfolio-page1">
+                            <div class="card">
+                            <img src=".//images/furnituree.png" alt="">
+                        </div>
+                            <!-- <div class="layer">
+                                <p>This is my personal portfolio website.I have made this with the help of html,css and
+                                    Javascript.You can see my projects,skills, and contact me over here as well.</p>
+
+                            </div> -->
+                        </div>
+
+
+                        <!-- <div class="portfolio-page1">
+                            <div>
+                            <img src=".//ecomm.jpg" alt="">
+                        </div>
+                        </div>
+
+                        <div class="portfolio-page1">
+                            <div>
+                            <img src=".//fooddel.png" alt="">
                         </div>
                     </div>
                     <div class="portfolio-page1">
-                        <img src="img1.webp" alt="">
-                        <div class="layer">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+                            <div>
+                            <img src=".//dentall.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="portfolio-page1">
-                        <img src="img2.png" alt="">
-                        <div class="layer">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div> -->
 
-                        </div>
-                    </div>
+
+
+
                 </div>
                 </div>
                 <a href="#" class="btn-1">See more</a>
+            </section>
             </div>
         </div>
         <!-- ...........contact............. -->
         
         <div id="contact">
             <div class="container">
+            <section class="section">
                 <div class="row">
                     <div class="column-left">
                         <h1>Contact me</h1>
-                        <p>contact@example</p>
-                        <p id="para">9761236745</p>
+                        <p>mamtarana011@gmail.com</p>
+                        <p>8080129156</p>
                 
                 <div class="social">
                     
@@ -222,37 +309,48 @@
 
 
                 </div>
-                <a href="mm.docx"  download class="btn-1 btn-2">Download CV</a>
+                        <a href="mm.docx" download class="btn-1 btn-2">Download CV</a>
 
                 </div>
                 
                 <div class="column-right">
-                    <form name="userform" action="https://formspree.io/f/mkgoabgb" method="post" >
+                        <form name="userform" action="https://formspree.io/f/mkgoabgb" method="post">
                         <input type="text" name="name" placeholder="Enter your name" required>
                         <input type="email" name="email" placeholder="email" required>
                         <textarea name="textarea" rows=6 placeholder="message" required></textarea>
                         <button type="submit" class="btn-1">Send</button>
 
                     </form>
-
-
+                    </div>
                 </div>
-            </div>
-            </div>
+            </section>
         </div>
-        <div class="copyright">
+    </div>
+
+    
+    
+<footer class="copyright">
+        <div>
             <p>copyright@mamta||2025</p>
         </div>
-        
-    </div>
+          
+    
+</footer>
+
+   
     <script>
-        let sidemenuu=document.querySelector("#sidemenu");
-        function openmenu(){
-            sidemenuu.style.right="0";
+        let sidemenuu = document.querySelector("#sidemenu");
+        function openmenu() {
+            sidemenuu.style.right = "0";
         }
-        function closemenu(){
-            sidemenuu.style.right="-200px";
+        function closemenu() {
+            sidemenuu.style.right = "-200px";
         }
+
+
+
+
+        
     </script>
 </body>
 
