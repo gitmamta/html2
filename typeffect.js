@@ -25,7 +25,7 @@
 const text ="Front End Designer".toUpperCase();
 
 const typingElement = document.querySelector('.typing');
-typingElement.style.color="crimson"
+typingElement.style.color="white";
 let index = 0;
 
 function typeEffect() {

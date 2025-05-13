@@ -11,22 +11,21 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+
+
 .container{
-    padding: 10px 10%;
-
-
-}
-#header{
-    height:100vh;
-    width:100%;
-    margin-bottom:50px;
-    margin-top:50px;
-    padding:40px;
-   
     
-   
-        
+    margin:50px auto;
+    min-height:100vh;  
+    max-width:80%;
+    padding:100px;
 }
+  #header{ 
+}
+    
+    
+
 .nav{
     display:flex;
     align-items: center;
@@ -35,11 +34,12 @@ html{
     padding:20px;
     cursor: pointer;
     position: fixed;
-top: 0;
-left:0;
-width:100%; 
-overflow: hidden;
-z-index:10;
+    top: 0;
+    left:0;
+    width:100%; 
+    overflow: hidden;
+    z-index:10;
+    background: #080808ea;
 
     
     
@@ -93,26 +93,28 @@ nav ul li a:hover::after
     
     
 }
-.header-container{
-    margin-top:15%;
-    font-size: 30px;
-    
+#home{
+    /* padding:20px; */
 }
+
+ 
 /* //column2 h2 */
-.header-container h2{
+.column2 h2{
     font-size: 60px;
     margin-top:30px;
-    text-shadow: 2px 2px yellow;
+    margin-bottom:30px;
+    text-shadow: 2px 2px white;
     cursor: pointer;
-    /* margin-bottom:10px; */
+    
 
 }
-.header-container span{
+.column2 span{
     color:#ff008f;
 }
 .column2 p{
     font-size:30px;
     /* cursor: pointer; */
+    
     
 }
 
@@ -123,6 +125,7 @@ nav ul li a:hover::after
     
     font-weight: bold;
     animation:blink-cursor 0.7s step-end infinite;
+    
     
 }
 
@@ -141,8 +144,7 @@ nav ul li a:hover::after
 
 .column2{
     flex-basis:60%;
-    /* margin-top:20px;
-    */
+    
 }
 
 .column3{
@@ -151,36 +153,31 @@ nav ul li a:hover::after
 
 }
 .column3 img{
+    margin-top:40px;
     border-radius:10px;
     width:100%;
     cursor: pointer;
     border:2px solid transparent;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-out;
     
     
     
 }
 .column3 img:hover{
-    border:3px solid blue;
+    /* border:3px solid blue; */
     transform: scale(1.05);
-    opacity:0.5;
+    opacity:0.9;
+    filter: brightness(1.2); 
     
 }
 
 
-/* ......skills...... ( min-height)for all sections */
 
-.section{
-    min-height:100vh;
-    margin-bottom:50px;
-    margin-top:50px;
-    
-}
 /* ..............About page........ */
 #about{
     
     color: #ababab;
-    padding:20px;
+    /* padding:20px; */
     
     
 }
@@ -189,8 +186,8 @@ nav ul li a:hover::after
 .heading{
     align-content:center;
     /* color:red; */
-    margin-bottom:10px;
-    font-size:50px;
+    /* margin-bottom:10px; */
+    font-size:40px;
     color:#fff;
     /* font-weight:300; */
     padding:10px;
@@ -235,7 +232,7 @@ cursor: pointer;
 
 #skills{
 
-    padding:20px;
+    /* padding:30px; */
     color:fuchsia;
     text-align: center;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* No shadow initially */
@@ -263,6 +260,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 .skill-head{
     font-size:40px;
@@ -273,28 +271,33 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 400px;
+    width:100%;
+    max-width:400px;
     border:3px solid grey;
     padding:10px 20px;
-    grid-gap:10px;
+    /* grid-gap:10px; */
+    gap:10px;
     margin: 20px 20px 20px;
     border-radius: 10px;
     cursor: pointer;
     box-sizing: border-box;
+    flex-wrap: wrap;
     
 }
 .skills-sections .cell1 img{
+    
     width:100px;
     height:100px;
-    object-fit:cover;
+    /* object-fit:cover; */
     border-radius: 3px;
+    align-content:center;
     /* overflow: hidden; */
 }
 .skills-sections .cell1 span{
     font-size:35px;
 }
 .skills-sections .cell1:hover{
-    background-color:blue;
+    background-color:white;
 }
 
 
@@ -304,7 +307,7 @@ cursor: pointer;
 /* ...................Services............ */
 
 #services{
-    padding:20px;
+    /* padding:40px; */
 }
 .heading1{
     font-size: 40px;
@@ -367,7 +370,7 @@ transition:background 0.5s,transform 0.5s;
     font-size:25px;
     color:salmon;
     margin-top:20px;
-    align-content:left;
+    align-content:center;
     
     
 }
@@ -384,7 +387,7 @@ transition:background 0.5s,transform 0.5s;
 }
 
 #portfolio{
-   padding:20px;
+   /* padding:40px; */
 
 }
 
@@ -490,7 +493,7 @@ border:3px solid rgba(255, 0, 0, 0.623);
 
 #contact{
     
-    padding:40px;
+    /* padding:40px; */
     
 }
 .column-left{
@@ -554,11 +557,12 @@ form input,form textarea{
 .copyright p{
     width:100%;
     text-align: center;
-    background:#262626;
-    /* padding:10px 0; */
-    /* font-weight:500; */
+    background: #141414;
+    color: #f0f0f0;
     font-size: 30px;
     margin-bottom:0%;
+    /* color: #cccccc; */
+
     
 }
 
@@ -568,14 +572,14 @@ nav .fas{
 }
 
 
-.fade-in-image {
+/* .fade-in-image {
     opacity: 50%;
   }
   
   .fade-in-image:hover {
     opacity: 100%;
     transition: opacity 1s;
-  }
+  } */
 
   
 
@@ -583,22 +587,37 @@ nav .fas{
 
 
 @media only screen and (max-width:600px){
-    .header-container{
+    
+    /* .container{
+        
+    margin:20px auto;
+    min-height:50vh;  
+    max-width:80%;
+    padding:50px;
+    } */
+    .column2{
         /* font-size:16px; */
         margin-top:100%;
     }
-    .header-container h2{
+    .column2 h2{
         font-size:25px;
         margin-bottom:50px;
+        /* align-content:center; */
     }
 
      .column2 p{
-        font-size:14px;
+        font-size:18px;
+        margin-bottom:20px;
+        
     } 
+    .typing{
+        font-size:16px;
+    }
     
      .column3 img{
-        width:100px;
-        height:100px;
+        width:200px;
+        height:200px;
+       
         
     } 
       
@@ -642,13 +661,18 @@ nav .fas{
     .skill-head{
         font-size:25px;
     }
+    
     .skills-sections .cell1 img{
-        height:40px;
-        width: 40px;
+        height:80px;
+        width: 80px;
+        
         } 
     .skills-sections .cell1{
-        font-size: 16px;
+        /* font-size: 16px; */
         align-content:center;
+        flex-direction:column;
+        padding:5px 10px;
+        gap:5px;
         
     }
     .skills-sections .cell1 span{
@@ -658,9 +682,14 @@ nav .fas{
     .heading1{
         font-size: 25px;
     }
-    .services-list{
-        flex-basis:100%;
-    }
+    /* .services-list-1{
+        /* font-size: 16px; */
+        /* align-content:center;
+        flex-direction:column;
+        
+        
+    } */ */
+    
     .services-list-1 img{
         height:30px;
         width:30px;
