@@ -318,6 +318,7 @@ cursor: pointer;
 .services-list{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(3, 1fr); 
     margin-top:30px;
     grid-gap:40px;
     align-content:center;
