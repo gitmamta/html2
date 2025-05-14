@@ -275,7 +275,6 @@ cursor: pointer;
     max-width:400px;
     border:3px solid grey;
     padding:10px 20px;
-    /* grid-gap:10px; */
     gap:10px;
     margin: 20px 20px 20px;
     border-radius: 10px;
@@ -406,7 +405,6 @@ transition:background 0.5s,transform 0.5s;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     
-    grid-template-columns: repeat(3, 1fr); /* Forces 3 columns */
     
     margin-top:10px;
     grid-gap:20px;
@@ -449,7 +447,8 @@ border:3px solid rgba(255, 0, 0, 0.623);
     transition:background 0.5s,transform 0.5s;
     background:rgb(139, 0, 139);
     transform: translateY(-10px);
-    opacity: 0.5;
+    opacity: 0.8;
+    filter: brightness(1.2);
 }
 
 
