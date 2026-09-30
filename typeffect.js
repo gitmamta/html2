@@ -22,7 +22,7 @@
 
 
 
-const text ="Front End Designer".toUpperCase();
+const text ="FULL STACK DEVELOPER".toUpperCase();
 
 const typingElement = document.querySelector('.typing');
 typingElement.style.color="white";
