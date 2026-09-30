@@ -19,7 +19,8 @@ html{
     margin:50px auto;
     min-height:100vh;  
     max-width:80%;
-    padding:100px;
+    /* padding:100px; */
+    padding-top:140px;
 }
   #header{ 
 }
